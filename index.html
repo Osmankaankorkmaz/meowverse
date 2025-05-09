@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meowverse Demo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>🐾 Meowverse Demo</h1>
+
+        <div class="cat-container" id="randomCatContainer">
+            <h2>🎲 Random Cat</h2>
+            <button id="randomBtn">Generate Random Cat</button>
+            <div id="randomCatLoader" class="loader hidden"></div>
+            <img id="randomCatImage" alt="Random cat" class="hidden" />
+        </div>
+
+        <div class="cat-container" id="colorCatContainer">
+            <h2>🌈 Cat by Color</h2>
+            <div class="select-container">
+                <label for="colorSelect">Select Color:</label>
+                <select id="colorSelect">
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="orange">Orange</option>
+                    <option value="gray">Gray</option>
+                </select>
+            </div>
+            <button id="colorBtn">Find Cat by Color</button>
+            <div id="colorCatLoader" class="loader hidden"></div>
+            <img id="colorCatImage" alt="Cat by Color" class="hidden" />
+        </div>
+
+        <div class="cat-container" id="moodCatContainer">
+            <h2>😺 Cat by Mood</h2>
+            <div class="select-container">
+                <label for="moodSelect">Select Mood:</label>
+                <select id="moodSelect">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="funny">Funny</option>
+                    <option value="sleepy">Sleepy</option>
+                    <option value="curious">Curious</option>
+                    <option value="playful">Playful</option>
+                </select>
+            </div>
+            <button id="moodBtn">Find Cat by Mood</button>
+            <div id="moodCatLoader" class="loader hidden"></div>
+            <img id="moodCatImage" alt="Cat by Mood" class="hidden" />
+        </div>
+
+        <div class="cat-container" id="colorMoodCatContainer">
+            <h2>🌈 Cat by Color + Mood</h2>
+            <div class="select-container">
+                <label for="colorSelectMood">Select Color:</label>
+                <select id="colorSelectMood">
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="orange">Orange</option>
+                    <option value="gray">Gray</option>
+                </select>
+            </div>
+            <div class="select-container">
+                <label for="moodSelectColor">Select Mood:</label>
+                <select id="moodSelectColor">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="funny">Funny</option>
+                    <option value="sleepy">Sleepy</option>
+                    <option value="curious">Curious</option>
+                    <option value="playful">Playful</option>
+                </select>
+            </div>
+            <button id="colorMoodBtn">Find Cat by Color + Mood</button>
+            <div id="colorMoodCatLoader" class="loader hidden"></div>
+            <img id="colorMoodCatImage" alt="Cat by Color + Mood" class="hidden" />
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
